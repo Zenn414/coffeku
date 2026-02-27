@@ -3,8 +3,8 @@
 :root {
     --ff-header: 'Pacifico';
     --ff-main: 'Poppins';
-    --fs-header: '24px';
-    --fs-main: '16px';
+    --fs-header: 48px;
+    --fs-main: 16px;
 
     --main-color: #4B2E2B;
     --secondary-color: #C4A484;
@@ -32,6 +32,7 @@ button:hover {
 
 h1 {
     font-family: var(--ff-header);
+    font-size: var(--fs-header) !important;
 }
 
 .center {
@@ -201,7 +202,9 @@ input{
     width: 100% !important;
     background-color: var(--secondary-color);
     border: none;
-
+}
+#order button{
+    background-color: var(--secondary-color) !important;
 }
 /* Promo */
 #promo input{
