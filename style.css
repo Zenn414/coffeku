@@ -241,6 +241,11 @@ input{
     overflow-y: scroll;
     max-height: 500px;
 }
+.wrapper-card .card img{
+    max-height: 400px;
+    object-fit: cover;
+    width: 100% !important;
+}
 .wrapper-card .card a{
     width: 100% !important;
     background-color: var(--secondary-color);
