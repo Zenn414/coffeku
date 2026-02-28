@@ -73,13 +73,56 @@ input{
 
 /* Navbar */
 .navbar {
+    
     background-color: var(--main-color) !important;
 }
 
 .navbar img {
-    width: 90px;
+    width: 100px;
+}
+.navbar i{
+    cursor: pointer;
 }
 
+/* SideBar */
+#sidebar{
+    width: 400px;
+    
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: -100%;
+    transition: .7s ease-in-out;
+    
+}
+#sidebar.active{
+    right: 0;
+}
+#sidebar .list-group .list-group-item img{
+    width: 60px;
+    height: 60px;
+}
+
+#sidebar #count button{
+    font-size: 12px;
+    border: 1px solid var(--main-color);
+    padding: 2px 8px !important;
+}
+#sidebar ul li{
+    position: relative;
+}
+#sidebar ul li i{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+#sidebar #close{
+    cursor: pointer;
+}
+#sidebar i{
+    cursor: pointer;
+}
 /* Hero */
 #hero {
     background-image: url('assets/hero.jpg');
@@ -128,7 +171,7 @@ input{
     transform: scaleX(-1);
     width: 400px;
     height: 400px;
-    opacity: 40%;
+    opacity: 20%;
 }
 
 #about-us .row img {
@@ -227,8 +270,10 @@ input{
  #order .wrapper-card .card{
     width: 100% !important;
 }
+#sidebar{
+    width: 300px;
 }
-
+}
 @media screen and (max-width:586px){
    
 }
